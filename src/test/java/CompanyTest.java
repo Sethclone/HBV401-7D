@@ -3,6 +3,8 @@ import hbv7d.repository.CompanyRepository;
 import hbv7d.controller.CompanyController;
 import hbv7d.model.Company;
 import hbv7d.model.Tour;
+
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -39,6 +41,14 @@ public class CompanyTest {
         mockRepo = mock(CompanyRepository.class);
         // Setur upp companyController með mockinu í, sem verður þarf svo að skipta fyrir DB aðgang
         controller = new CompanyController(mockRepo);
+    }
+
+    /**
+     * Performs a cleanup after each test.
+     */
+    @AfterEach
+    void tearDown() {
+        reset(mockRepo);
     }
 
     /**
