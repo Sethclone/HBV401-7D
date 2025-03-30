@@ -31,6 +31,9 @@ public class Company {
         toursOffered.add(tour);
     } //makeTour
 
+
+
+    //Ekki betra addTour??
     public void setTour(List<Tour> toursOffered) {
         this.toursOffered = toursOffered;
     } //updateTour

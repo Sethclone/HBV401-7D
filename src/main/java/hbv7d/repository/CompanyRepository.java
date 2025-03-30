@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CompanyRepository {
+    
+
     private Map<Integer, Company> companyStorage = new HashMap<>();
 
     public Company findById(int companyId) {
