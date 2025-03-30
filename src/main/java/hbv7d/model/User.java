@@ -39,7 +39,7 @@ public class User {
 
     public List<Booking> getBookings() {
         return bookings;
-    }
+    } //viewBooking
 
     public void setBookings(List<Booking> bookings) {
         this.bookings = bookings;
