@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hbv7d.main</groupId>
-    <artifactId>HBV401G.Group.DayTour7.main</artifactId>
+    <groupId>HBV401G.Group.DayTour7.main</groupId>
+    <artifactId>Group-DayTour7-main</artifactId>
     <version>1.2-SNAPSHOT</version>
 
     <properties>
