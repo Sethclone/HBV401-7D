@@ -1,4 +1,4 @@
-package hbv7d.ui;
+package hbv7d;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

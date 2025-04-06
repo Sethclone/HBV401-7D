@@ -1,4 +1,4 @@
-package hbv7d.ui;
+package hbv7d;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
