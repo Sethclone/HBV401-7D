@@ -7,11 +7,13 @@ import java.util.List;
 
 public class CompanyController {
     private CompanyRepository companyRepository; // Mocked in testing
+    private TourRepository tourRepository;
 
-    public CompanyController(CompanyRepository companyRepository) {
+    public CompanyController(CompanyRepository companyRepository, TourRepository tourRepository) {
         this.companyRepository = companyRepository;
+        this.tourRepository = tourRepository;
     }
-
+    
     public boolean createCompany(Company company) {
         if (companyRepository.findById(company.getCompanyId()) == null) {
             companyRepository.save(company);
@@ -36,15 +38,14 @@ public class CompanyController {
     public boolean addTour(int companyId, Tour tour) {
         Company company = companyRepository.findById(companyId);
         if (company != null) {
-            company.addTour(tour);
-            companyRepository.save(company);
+            tour.setHost(company);
+            tourRepository.save(tour);
             return true;
         }
         return false;
     }
 
     public List<Tour> viewCompanyTours(int companyId) {
-        Company company = companyRepository.findById(companyId);
-        return (company != null) ? company.viewCompanyTours() : null;
+        return tourRepository.findByCompanyId(companyId);
     }
 }
