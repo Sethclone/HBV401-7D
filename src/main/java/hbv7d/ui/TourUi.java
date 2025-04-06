@@ -1,4 +1,4 @@
-package hbv7d.Ui;
+package hbv7d.ui;
 
 public class TourUi {
 }
