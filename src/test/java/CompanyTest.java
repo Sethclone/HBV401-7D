@@ -40,7 +40,7 @@ public class CompanyTest {
         // Setur upp mock af CompanyRepository, sem er mock object okkar
         mockRepo = mock(CompanyRepository.class);
         // Setur upp companyController með mockinu í, sem verður þarf svo að skipta fyrir DB aðgang
-        controller = new CompanyController(mockRepo);
+        controller = new CompanyController(mockRepo, null);
     }
 
     /**

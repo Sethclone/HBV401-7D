@@ -19,4 +19,7 @@ public class Booking {
     enum BookingStatus {
         PENDING, CONFIRMED, CANCELLED
     }
+
+    
+
 }
