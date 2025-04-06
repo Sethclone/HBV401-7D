@@ -8,4 +8,6 @@ module hbv7d {
     exports hbv7d.repository;
     exports hbv7d.controller;
     exports hbv7d.model;
+    exports hbv7d;
+    opens hbv7d to javafx.fxml;
 }
