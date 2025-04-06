@@ -1,4 +1,4 @@
-package hbv7d.apl;
+package hbv7d.api;
 
 public class Api {
     public void Api(){
