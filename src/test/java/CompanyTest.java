@@ -77,7 +77,7 @@ public class CompanyTest {
         //Checkar hvort við fengum örruglega ekki null
         assertNotNull(retrievedCompany);
         //Sér hvort nafnið á retrievedCompany sé ekki örruglega Company1
-        assertEquals(" Company1", retrievedCompany.getName());
+        assertEquals("Company1", retrievedCompany.getName());
 
         //Bætir við Tour á þetta fyrirtæki sem við gerðum fyrir ofan.
         newCompany.setTour(new ArrayList<>());
