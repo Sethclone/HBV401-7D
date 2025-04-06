@@ -31,10 +31,6 @@ public class Booking {
         PENDING, CONFIRMED, CANCELLED
     }
 
-<<<<<<< HEAD
-    
-
-=======
     public BookingStatus getStatus() {
         return status;
     }
@@ -62,5 +58,5 @@ public class Booking {
     public void setBookingID(int bookingID) {
         this.bookingID = bookingID;
     }
->>>>>>> 481bac41143f4f5b76e1ef13e70f9fd5dda8a72b
+
 }
