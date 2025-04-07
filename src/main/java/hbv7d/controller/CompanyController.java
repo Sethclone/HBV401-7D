@@ -13,6 +13,9 @@ public class CompanyController {
         this.companyRepository = companyRepository;
         this.tourRepository = tourRepository;
     }
+    public CompanyController(){
+
+    }
     
     public boolean createCompany(Company company) {
         if (companyRepository.findById(company.getCompanyId()) == null) {
