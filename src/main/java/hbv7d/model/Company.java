@@ -8,6 +8,14 @@ public class Company {
     private List<Tour> toursOffered;
 
 
+
+
+
+    // No argument constructor
+    public Company() {
+        
+    }
+
     // Constructor
     public Company(int companyId, String name) {
         this.companyId = companyId;
@@ -16,11 +24,12 @@ public class Company {
     // Getters and setters
     public int getCompanyId() { return companyId; } //companyId: int
 
+    public void setCompanyId(int companyId) { this.companyId = companyId;}
+
     public String getName() { return name; } //name: string
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {this.name = name;}
+
 
     public List<Tour> viewCompanyTours() {
         return toursOffered;
