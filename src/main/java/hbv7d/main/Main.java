@@ -19,5 +19,6 @@ public class Main {
 //        Company company1 = companyController.getCompany(1);
 //        System.out.println(company1.getName());
         Api api = new Api();
+        System.out.println(api.getCompany(1));
     }
 }

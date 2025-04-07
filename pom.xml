@@ -6,7 +6,7 @@
 
     <groupId>HBV401G.Group.DayTour7.main</groupId>
     <artifactId>Group-DayTour7-main</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
