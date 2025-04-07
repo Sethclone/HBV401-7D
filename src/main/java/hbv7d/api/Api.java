@@ -1,11 +1,14 @@
 package hbv7d.api;
 
+import hbv7d.controller.CompanyController;
+import hbv7d.controller.UserController;
+
 public class Api {
-    public void Api(){
-
+    CompanyController companyController;
+    UserController userController;
+    public Api(){
+        userController = new UserController();
+        companyController = new CompanyController();
     }
 
-    public int Name(){
-        return 2;
-    }
 }
