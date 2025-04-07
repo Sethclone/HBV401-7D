@@ -13,8 +13,13 @@ public class CompanyController {
         this.companyRepository = companyRepository;
         this.tourRepository = tourRepository;
     }
-    public CompanyController(){
 
+    /**
+     * makes the classes for ya
+     */
+    public CompanyController(){
+        this.companyRepository = new CompanyRepository();
+        this.tourRepository = new TourRepository();
     }
     
     public boolean createCompany(Company company) {
