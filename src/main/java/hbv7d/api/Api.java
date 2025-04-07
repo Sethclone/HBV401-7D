@@ -16,15 +16,7 @@ public class Api {
     UserController userController;
     public Api(){
         userController = new UserController();
-
-
         start();
-//        Path currentRelativePath = Paths.get("");
-//        String s = currentRelativePath.toAbsolutePath().toString();
-//        System.out.println("Current absolute path is: " + s);
-//        System.out.println("hello");
-//        System.out.println("Working Directory = " + System.getProperty("user.dir"));
-//        System.out.println("hello2");
     }
 
     private void start(){
