@@ -1,5 +1,6 @@
 package hbv7d.database;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -14,7 +15,8 @@ public class DBConnection {
         if (connection == null || connection.isClosed()) {
             try {
                 Class.forName("org.sqlite.JDBC");
-                connection = DriverManager.getConnection("jdbc:sqlite:DayTours.db");
+                String filePAbsPath = System.getProperty("user.dir") + "\\" + "DayTours.db";
+                connection = DriverManager.getConnection("jdbc:sqlite:" +filePAbsPath);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
