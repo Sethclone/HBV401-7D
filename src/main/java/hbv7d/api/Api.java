@@ -11,6 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+//TODO think about if we should split this up in companyapi and user api or just use them for the ui
 public class Api {
     CompanyController companyController;
     UserController userController;

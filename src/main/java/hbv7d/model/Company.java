@@ -22,11 +22,17 @@ public class Company {
         this.name = name;
     }
     // Getters and setters
-    public int getCompanyId() { return companyId; } //companyId: int
+    public int getCompanyId() {
+        return companyId;
+    } //companyId: int
 
-    public void setCompanyId(int companyId) { this.companyId = companyId;}
+    public void setCompanyId(int companyId) {
+        this.companyId = companyId;
+    }
 
-    public String getName() { return name; } //name: string
+    public String getName() {
+        return name;
+    } //name: string
 
     public void setName(String name) {this.name = name;}
 

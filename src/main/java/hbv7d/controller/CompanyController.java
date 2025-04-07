@@ -30,6 +30,7 @@ public class CompanyController {
         return false;
     }
 
+    //TODO add a check for if there is no company whit that id
     public Company getCompany(int companyId) {
         return companyRepository.findById(companyId);
     }
@@ -52,7 +53,8 @@ public class CompanyController {
         }
         return false;
     }
-
+    //TODO add a check for if there is no company whit that id
+    //TODO add a check for if there is no tour with that company
     public List<Tour> viewCompanyTours(int companyId) {
         return tourRepository.findByCompanyId(companyId);
     }
